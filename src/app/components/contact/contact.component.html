@@ -1,0 +1,39 @@
+<div class="row">
+  <mat-card class="col-12">
+    <h4>Contact Information</h4>
+  </mat-card>
+</div>
+<mat-divider class="my-3"></mat-divider>
+<div class="row mb-5">
+  <div class="col-12 col-md-4">
+    <address>
+      <p><strong>Abhishek Chakraborty</strong></p>
+      <p>Navi Mumbai</p>
+      <p>Vashi, Sector 29</p>
+    </address>
+    <address>
+      <p>
+        <strong>
+          Email:
+        </strong>
+      </p>
+      <a class="greenicon" href="mailto:abhishek.c7@outlook.com">abhishek.c7@outlook.com</a>
+    </address>
+  </div>
+  <div class="col-12 col-md-8">
+    <form ngNoForm action="https://formspree.io/abhishek.c7@outlook.com" method="POST">
+      <mat-form-field class="full-width mb-2">
+        <input matInput type="email" placeholder="Your Email" required name="_replyto" />
+      </mat-form-field>
+      <mat-form-field class="full-width mb-2">
+        <input matInput type="text" placeholder="Subject" name="subject" required />
+      </mat-form-field>
+      <mat-form-field class="full-width mb-2">
+        <textarea class="full-width mb-2" matInput placeholder="Message" name="message">
+
+                </textarea>
+      </mat-form-field>
+      <button mat-stroked-button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
